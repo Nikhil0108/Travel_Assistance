@@ -59,6 +59,7 @@ def extract_query(state: TravelState):
     total_tokens = response.response_metadata["token_usage"]["total_tokens"]
     asyncio.create_task(charge_for_model_tokens("gpt-3.5-turbo", total_tokens))
 
+    
     # Extract JSON from AI response
     try:
         response_json = json.loads(response.content)
