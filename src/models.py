@@ -18,5 +18,6 @@ class TravelState(BaseModel):
     sights_info: Optional[str] = Field(None, description="Formatted sightseeing recommendations.")
     itinerary: Optional[str] = Field(None, description="AI-generated structured travel itinerary.")
 
+    
     class Config:
         arbitrary_types_allowed = True  # Allow non-Pydantic types if necessary
