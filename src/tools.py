@@ -86,6 +86,7 @@ def find_flights(departure_airport: str, arrival_airport: str, departure_date: s
         "currency": "USD",
         "api_key": SERPAPI_KEY,
     }
+    
     if return_date:
         params["type"] = "1"  # Round Trip
     else:
