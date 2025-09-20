@@ -57,6 +57,7 @@ async def charge_for_model_tokens(model_name: str, tokens: int) -> None:
     await Actor.charge(event_name=event_name, count=tokens_hundreds)
 
 
+
 async def charge_for_actor_start() -> None:
     """Charges for the Actor start event.
 
