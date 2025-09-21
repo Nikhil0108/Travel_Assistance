@@ -25,6 +25,7 @@ def log_state(state: dict) -> None:
     Actor.log.debug('-------- Message --------')
     Actor.log.debug('Message: %s', message)
 
+    
     # Print all tool calls
     if hasattr(message, 'tool_calls'):
         for tool_call in getattr(message, 'tool_calls', []):
